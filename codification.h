@@ -10,7 +10,8 @@
 #define TYPE_BITS    3           // => 2^2 - 1   => 3  active bits
 #define NAME_BITS    255         // => 2^8 - 1   => 8  active bits
 
-size_t encode(struct movement m) {
+size_t encode(struct movement m)
+{
   size_t code;
   size_t helper;
 
@@ -28,7 +29,8 @@ size_t encode(struct movement m) {
   return code;
 }
 
-struct movement decode(size_t code){
+struct movement decode(size_t code)
+{
   struct movement m;
   size_t helper;
 
